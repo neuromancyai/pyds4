@@ -1,0 +1,17 @@
+[project]
+name = "pyds4"
+version = "0.1.0"
+description = "Python interface for manipulating with DASTA medical information system data exchange format"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "lxml>=6.1.1",
+    "pydantic>=2.13.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.24,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "ds4"
